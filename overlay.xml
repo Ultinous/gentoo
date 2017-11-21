@@ -1,0 +1,12 @@
+<repositories encoding="unicode" version="1.1">
+  <repo priority="1000" quality="experimental">
+    <name>ultinous</name>
+    <description>Ultinous repo</description>
+    <homepage>https://github.com/Ultinous/gentoo</homepage>
+    <owner>
+      <email>attila@ultinous.com</email>
+      <name>Szabó Attila</name>
+    </owner>
+    <source type="git">https://github.com/Ultinous/gentoo.git</source>
+  </repo>
+</repositories>
