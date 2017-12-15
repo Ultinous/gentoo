@@ -15,7 +15,10 @@ KEYWORDS="amd64"
 IUSE=""
 
 DEPEND=""
-RDEPEND="=dev-util/nvidia-cuda-toolkit-9*"
+RDEPEND="
+	=dev-util/nvidia-cuda-toolkit-9*
+	!dev-libs/cudnn
+"
 
 pkg_nofetch() {
 	einfo "Please download"
