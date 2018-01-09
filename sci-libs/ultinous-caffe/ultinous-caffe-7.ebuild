@@ -25,7 +25,7 @@ DEPEND="
 	dev-util/nvidia-cuda-toolkit
 	dev-libs/nvidia-cuda-cudnn
 	sci-libs/openblas
-	dev-libs/protobuf
+	dev-libs/protobuf:=
 	dev-cpp/glog
 	dev-cpp/gflags
 	sci-libs/hdf5
