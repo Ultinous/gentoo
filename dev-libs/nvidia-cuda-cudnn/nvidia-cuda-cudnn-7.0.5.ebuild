@@ -16,7 +16,7 @@ IUSE=""
 
 DEPEND=""
 RDEPEND="
-	=dev-util/nvidia-cuda-toolkit-9*
+	=dev-util/nvidia-cuda-toolkit-9.0*
 	!dev-libs/cudnn
 "
 
