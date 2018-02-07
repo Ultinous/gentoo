@@ -1,0 +1,29 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 3e1e7f2321..d56f8856e7 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -54,7 +54,7 @@ set(gRPC_ZLIB_PROVIDER "module" CACHE STRING "Provider of zlib library")
+ set_property(CACHE gRPC_ZLIB_PROVIDER PROPERTY STRINGS "module" "package")
+ 
+ set(gRPC_CARES_PROVIDER "module" CACHE STRING "Provider of c-ares library")
+-set_property(CACHE gRPC_CARES_PROVIDER PROPERTY STRINGS "module" "package")
++set_property(CACHE gRPC_CARES_PROVIDER PROPERTY STRINGS "module" "package" "pkgconfig")
+ 
+ set(gRPC_SSL_PROVIDER "module" CACHE STRING "Provider of ssl library")
+ set_property(CACHE gRPC_SSL_PROVIDER PROPERTY STRINGS "module" "package")
+diff --git a/cmake/cares.cmake b/cmake/cares.cmake
+index 53d7582f6f..2ce79dcd18 100644
+--- a/cmake/cares.cmake
++++ b/cmake/cares.cmake
+@@ -36,4 +36,11 @@ elseif("${gRPC_CARES_PROVIDER}" STREQUAL "package")
+     set(_gRPC_CARES_INCLUDE_DIR ${c-ares_INCLUDE_DIR})
+   endif()
+   set(_gRPC_FIND_CARES "if(NOT c-ares_FOUND)\n  find_package(c-ares CONFIG)\nendif()")
++elseif("${gRPC_CARES_PROVIDER}" STREQUAL "pkgconfig")
++  find_package(PkgConfig REQUIRED)
++  pkg_search_module(c-ares REQUIRED IMPORTED_TARGET libcares)
++  if(TARGET PkgConfig::c-ares)
++    set(_gRPC_CARES_LIBRARIES PkgConfig::c-ares)
++  endif()
++  set(_gRPC_FIND_CARES "find_package(PkgConfig REQUIRED)\npkg_search_module(c-ares REQUIRED IMPORTED_TARGET libcares)\n")
+ endif()
