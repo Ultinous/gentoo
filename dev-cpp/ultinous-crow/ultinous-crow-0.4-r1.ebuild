@@ -17,7 +17,6 @@ IUSE="test"
 
 DEPEND="
 	>=dev-libs/boost-1.52
-	dev-libs/openssl
 "
 RDEPEND="${DEPEND}"
 
