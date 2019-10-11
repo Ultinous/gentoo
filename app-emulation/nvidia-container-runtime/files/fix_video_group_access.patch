@@ -1,0 +1,13 @@
+diff --git a/toolkit/config.toml.centos b/toolkit/config.toml.centos
+index 33d8e82..cee982a 100644
+--- a/toolkit/config.toml.centos
++++ b/toolkit/config.toml.centos
+@@ -9,7 +9,7 @@ environment = []
+ #ldcache = "/etc/ld.so.cache"
+ load-kmods = true
+ #no-cgroups = false
+-#user = "root:video"
++user = "nobody:video"
+ ldconfig = "@/sbin/ldconfig"
+ 
+ [nvidia-container-runtime]

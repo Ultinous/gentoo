@@ -1,0 +1,23 @@
+diff --git a/Makefile b/Makefile
+index d6fd53e..853976a 100644
+--- a/Makefile
++++ b/Makefile
+@@ -111,7 +111,8 @@ CFLAGS   := -std=gnu11 -O2 -g -fdata-sections -ffunction-sections -fstack-protec
+             -Wall -Wextra -Wcast-align -Wpointer-arith -Wmissing-prototypes -Wnonnull \
+             -Wwrite-strings -Wlogical-op -Wformat=2 -Wmissing-format-attribute -Winit-self -Wshadow \
+             -Wstrict-prototypes -Wunreachable-code -Wconversion -Wsign-conversion \
+-            -Wno-unknown-warning-option -Wno-format-extra-args -Wno-gnu-alignof-expression $(CFLAGS)
++            -Wno-unknown-warning-option -Wno-format-extra-args -Wno-gnu-alignof-expression \
++			-I/usr/include/tirpc $(CFLAGS)
+ LDFLAGS  := -Wl,-zrelro -Wl,-znow -Wl,-zdefs -Wl,--gc-sections $(LDFLAGS)
+ LDLIBS   := $(LDLIBS)
+ 
+@@ -120,7 +121,7 @@ LIB_CPPFLAGS       = -DNV_LINUX -isystem $(DEPS_DIR)$(includedir) -include $(BUI
+ LIB_CFLAGS         = -fPIC
+ LIB_LDFLAGS        = -L$(DEPS_DIR)$(libdir) -shared -Wl,-soname=$(LIB_SONAME)
+ LIB_LDLIBS_STATIC  = -l:libnvidia-modprobe-utils.a
+-LIB_LDLIBS_SHARED  = -ldl -lcap
++LIB_LDLIBS_SHARED  = -ldl -lcap -ltirpc
+ ifeq ($(WITH_LIBELF), yes)
+ LIB_CPPFLAGS       += -DWITH_LIBELF
+ LIB_LDLIBS_SHARED  += -lelf
