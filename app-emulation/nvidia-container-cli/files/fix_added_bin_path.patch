@@ -1,0 +1,20 @@
+diff --git a/src/nvc_info.c b/src/nvc_info.c
+index 30e3cfd..b773866 100644
+--- a/src/nvc_info.c
++++ b/src/nvc_info.c
+@@ -210,6 +210,15 @@ find_binary_paths(struct error *err, struct nvc_driver_info *info, const char *r
+         if ((env = ptr = xstrdup(err, env)) == NULL)
+                 return (-1);
+ 
++        {
++                size_t const envSize = strlen(env);
++                char * const modified = malloc(envSize + 9 + 1);
++                strcpy(modified, env);
++                strcpy(modified + envSize, ":/opt/bin");
++                free(env);
++                env = ptr = modified;
++        }
++
+         info->nbins = size;
+         info->bins = array_new(err, size);
+         if (info->bins == NULL)
