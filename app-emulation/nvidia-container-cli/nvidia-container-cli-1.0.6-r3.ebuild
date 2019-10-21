@@ -19,12 +19,20 @@ RESTRICT="mirror"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="-* amd64"
-IUSE=""
+KEYWORDS="-* ~amd64"
+IUSE="systemd"
 
-DEPEND="x11-drivers/nvidia-drivers[uvm] net-libs/rpcsvc-proto net-libs/libtirpc"
+DEPEND="
+	x11-drivers/nvidia-drivers[uvm]
+	net-libs/rpcsvc-proto
+	net-libs/libtirpc
+	systemd? ( sys-apps/systemd )
+"
 RDEPEND="${DEPEND}"
-BDEPEND="sys-devel/bmake sys-apps/lsb-release"
+BDEPEND="
+	sys-devel/bmake
+	sys-apps/lsb-release
+"
 
 PATCHES=(
  "${FILESDIR}"/fix_rpc_flags.patch
@@ -41,6 +49,7 @@ src_unpack() {
 
 src_prepare() {
 	default
+	use systemd && eapply "${FILESDIR}"/fix_added_bin_path.patch
 	touch ${S}/deps/src/${ELFTOOLCHAIN_VER}/.download_stamp
 	touch ${S}/deps/src/${NV_MODPROBE_VER}/.download_stamp
 }
