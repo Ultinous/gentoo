@@ -13,7 +13,7 @@ EGIT_SUBMODULES=(third_party/benchmark)
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE="test"
 
 DEPEND="
