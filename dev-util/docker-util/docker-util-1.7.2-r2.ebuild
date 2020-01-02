@@ -283,7 +283,7 @@ src_prepare() {
 }
 
 src_compile() {
-	default
+	cargo_src_compile
 
 	use bash-completion &&
 		${TMPBIN} completions bash > ${COMPDIR}/bash
@@ -296,7 +296,7 @@ src_compile() {
 }
 
 src_install() {
-	default
+	cargo_src_install
 
 	use bash-completion &&
 		newbashcomp ${COMPDIR}/bash ${PN}
