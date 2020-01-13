@@ -234,7 +234,7 @@ RESTRICT="mirror"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE="bash-completion zsh-completion fish-completion"
 
 DEPEND=">=app-emulation/docker-19"
