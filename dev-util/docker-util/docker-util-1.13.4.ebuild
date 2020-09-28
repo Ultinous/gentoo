@@ -31,7 +31,7 @@ bytes-0.5.6
 cast-0.2.3
 cc-1.0.60
 cfg-if-0.1.10
-chrono-0.4.15
+chrono-0.4.18
 clap-2.33.3
 constant_time_eq-0.1.5
 core-foundation-0.7.0
@@ -127,9 +127,9 @@ pest_derive-2.1.0
 pest_generator-2.1.3
 pest_meta-2.1.3
 petgraph-0.5.1
-pin-project-0.4.23
-pin-project-internal-0.4.23
-pin-project-lite-0.1.7
+pin-project-0.4.24
+pin-project-internal-0.4.24
+pin-project-lite-0.1.8
 pin-utils-0.1.0
 pkg-config-0.3.18
 ppv-lite86-0.2.9
@@ -137,7 +137,7 @@ proc-macro-error-1.0.4
 proc-macro-error-attr-1.0.4
 proc-macro-hack-0.5.18
 proc-macro-nested-0.1.6
-proc-macro2-1.0.21
+proc-macro2-1.0.23
 quote-1.0.7
 rand-0.7.3
 rand_chacha-0.2.2
@@ -157,8 +157,9 @@ same-file-1.0.6
 schannel-0.1.19
 security-framework-0.4.4
 security-framework-sys-0.4.3
-semver-0.10.0
+semver-0.11.0
 semver-0.9.0
+semver-parser-0.10.0
 semver-parser-0.7.0
 serde-1.0.116
 serde-aux-0.6.1
@@ -180,7 +181,7 @@ structopt-0.3.18
 structopt-derive-0.4.11
 strum-0.19.2
 strum_macros-0.19.2
-syn-1.0.41
+syn-1.0.42
 synstructure-0.12.4
 tempfile-3.1.0
 term_size-0.3.2
