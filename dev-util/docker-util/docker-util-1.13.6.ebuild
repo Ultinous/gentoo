@@ -74,7 +74,7 @@ getrandom-0.1.15
 gimli-0.22.0
 git2-0.13.11
 h2-0.2.6
-hashbrown-0.9.0
+hashbrown-0.9.1
 heck-0.3.1
 hermit-abi-0.1.16
 http-0.2.1
@@ -129,7 +129,7 @@ pest_meta-2.1.3
 petgraph-0.5.1
 pin-project-0.4.24
 pin-project-internal-0.4.24
-pin-project-lite-0.1.8
+pin-project-lite-0.1.9
 pin-utils-0.1.0
 pkg-config-0.3.18
 ppv-lite86-0.2.9
@@ -195,8 +195,8 @@ tokio-0.2.22
 tokio-tls-0.3.1
 tokio-util-0.3.1
 tower-service-0.3.0
-tracing-0.1.19
-tracing-core-0.1.16
+tracing-0.1.21
+tracing-core-0.1.17
 try-lock-0.2.3
 typenum-1.12.0
 ucd-trie-0.1.3
