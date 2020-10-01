@@ -17,7 +17,7 @@ arrayvec-0.5.1
 async-compression-0.3.5
 atty-0.2.14
 autocfg-1.0.1
-backtrace-0.3.50
+backtrace-0.3.51
 base64-0.12.3
 bitflags-1.2.1
 blake2b_simd-0.5.10
@@ -31,7 +31,7 @@ bytes-0.5.6
 cast-0.2.3
 cc-1.0.60
 cfg-if-0.1.10
-chrono-0.4.18
+chrono-0.4.19
 clap-2.33.3
 constant_time_eq-0.1.5
 core-foundation-0.7.0
@@ -53,7 +53,7 @@ failure-0.1.8
 failure_derive-0.1.8
 fake-simd-0.1.2
 fixedbitset-0.2.0
-flate2-1.0.17
+flate2-1.0.18
 fnv-1.0.7
 foreign-types-0.3.2
 foreign-types-shared-0.1.1
@@ -93,7 +93,7 @@ jobserver-0.1.21
 js-sys-0.3.45
 kernel32-sys-0.2.2
 lazy_static-1.4.0
-libc-0.2.77
+libc-0.2.78
 libgit2-sys-0.12.13+1.0.1
 libz-sys-1.1.2
 linked-hash-map-0.5.3
@@ -137,7 +137,7 @@ proc-macro-error-1.0.4
 proc-macro-error-attr-1.0.4
 proc-macro-hack-0.5.18
 proc-macro-nested-0.1.6
-proc-macro2-1.0.23
+proc-macro2-1.0.24
 quote-1.0.7
 rand-0.7.3
 rand_chacha-0.2.2
@@ -165,7 +165,7 @@ serde-1.0.116
 serde-aux-0.6.1
 serde-tuple-vec-map-1.0.0
 serde_derive-1.0.116
-serde_json-1.0.57
+serde_json-1.0.58
 serde_urlencoded-0.6.1
 serde_with-1.5.0-alpha.2
 serde_with_macros-1.2.0-alpha.3
