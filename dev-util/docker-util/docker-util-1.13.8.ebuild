@@ -19,6 +19,7 @@ atty-0.2.14
 autocfg-1.0.1
 backtrace-0.3.51
 base64-0.12.3
+base64-0.13.0
 bitflags-1.2.1
 blake2b_simd-0.5.10
 block-buffer-0.7.3
@@ -127,9 +128,9 @@ pest_derive-2.1.0
 pest_generator-2.1.3
 pest_meta-2.1.3
 petgraph-0.5.1
-pin-project-0.4.24
-pin-project-internal-0.4.24
-pin-project-lite-0.1.9
+pin-project-0.4.25
+pin-project-internal-0.4.25
+pin-project-lite-0.1.10
 pin-utils-0.1.0
 pkg-config-0.3.18
 ppv-lite86-0.2.9
@@ -167,8 +168,8 @@ serde-tuple-vec-map-1.0.0
 serde_derive-1.0.116
 serde_json-1.0.58
 serde_urlencoded-0.6.1
-serde_with-1.5.0-alpha.2
-serde_with_macros-1.2.0-alpha.3
+serde_with-1.5.0
+serde_with_macros-1.2.0
 serde_yaml-0.8.13
 sha-1-0.8.2
 sha-1-0.9.1
