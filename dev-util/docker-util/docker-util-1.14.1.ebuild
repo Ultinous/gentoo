@@ -170,7 +170,7 @@ serde-1.0.117
 serde-aux-1.1.0
 serde-tuple-vec-map-1.0.0
 serde_derive-1.0.117
-serde_json-1.0.59
+serde_json-1.0.60
 serde_urlencoded-0.7.0
 serde_with-1.6.0
 serde_with_macros-1.3.0
