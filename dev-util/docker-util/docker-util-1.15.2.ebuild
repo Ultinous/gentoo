@@ -23,12 +23,12 @@ blake2b_simd-0.5.11
 block-buffer-0.7.3
 block-buffer-0.9.0
 block-padding-0.1.5
-bumpalo-3.6.0
+bumpalo-3.6.1
 byte-tools-0.3.1
 byteorder-1.4.2
 bytes-1.0.1
 cast-0.2.3
-cc-1.0.66
+cc-1.0.67
 cfg-if-1.0.0
 chrono-0.4.19
 clap-2.33.3
@@ -37,11 +37,11 @@ core-foundation-0.9.1
 core-foundation-sys-0.8.2
 cpuid-bool-0.1.2
 crc32fast-1.2.1
-crossbeam-utils-0.8.1
+crossbeam-utils-0.8.2
 daggy-0.7.0
-darling-0.12.0
-darling_core-0.12.0
-darling_macro-0.12.0
+darling-0.12.2
+darling_core-0.12.2
+darling_macro-0.12.2
 digest-0.8.1
 digest-0.9.0
 dirs-3.0.1
@@ -56,16 +56,17 @@ flate2-1.0.20
 fnv-1.0.7
 foreign-types-0.3.2
 foreign-types-shared-0.1.1
-form_urlencoded-1.0.0
-futures-0.3.12
-futures-channel-0.3.12
-futures-core-0.3.12
-futures-executor-0.3.12
-futures-io-0.3.12
-futures-macro-0.3.12
-futures-sink-0.3.12
-futures-task-0.3.12
-futures-util-0.3.12
+form_urlencoded-1.0.1
+futures-0.3.13
+futures-channel-0.3.13
+futures-core-0.3.13
+futures-executor-0.3.13
+futures-io-0.3.13
+futures-macro-0.3.13
+futures-sink-0.3.13
+futures-task-0.3.13
+futures-util-0.3.13
+generator-0.6.24
 generic-array-0.12.3
 generic-array-0.14.4
 getrandom-0.1.16
@@ -83,7 +84,7 @@ httpdate-0.3.2
 hyper-0.14.4
 hyper-tls-0.5.0
 ident_case-1.0.1
-idna-0.2.1
+idna-0.2.2
 indexmap-1.6.1
 ipnet-2.3.0
 itoa-0.4.7
@@ -95,19 +96,20 @@ libgit2-sys-0.12.18+1.1.0
 libz-sys-1.1.2
 linked-hash-map-0.5.4
 log-0.4.14
+loom-0.4.0
 maplit-1.0.2
 matches-0.1.8
 memchr-2.3.4
 mime-0.3.16
 miniz_oxide-0.4.3
-mio-0.7.7
+mio-0.7.9
 miow-0.3.6
 native-tls-0.2.7
 ntapi-0.3.6
 num-integer-0.1.44
 num-traits-0.2.14
 object-0.23.0
-once_cell-1.5.2
+once_cell-1.6.0
 opaque-debug-0.2.3
 opaque-debug-0.3.0
 openssl-0.10.32
@@ -141,13 +143,15 @@ redox_users-0.3.5
 regex-1.4.3
 regex-syntax-0.6.22
 remove_dir_all-0.5.3
-reqwest-0.11.0
+reqwest-0.11.1
 rust-argon2-0.8.3
 rustc-demangle-0.1.18
 rustc_version-0.2.3
+rustversion-1.0.4
 ryu-1.0.5
 same-file-1.0.6
 schannel-0.1.19
+scoped-tls-1.0.0
 security-framework-2.0.0
 security-framework-sys-2.0.0
 semver-0.11.0
@@ -179,8 +183,8 @@ synstructure-0.12.4
 tempfile-3.2.0
 term_size-0.3.2
 textwrap-0.11.0
-thiserror-1.0.23
-thiserror-impl-1.0.23
+thiserror-1.0.24
+thiserror-impl-1.0.24
 thread_local-1.1.3
 time-0.1.43
 tinyvec-1.1.1
@@ -189,7 +193,7 @@ tokio-1.2.0
 tokio-native-tls-0.3.0
 tokio-util-0.6.3
 tower-service-0.3.1
-tracing-0.1.23
+tracing-0.1.25
 tracing-core-0.1.17
 tracing-futures-0.2.5
 try-lock-0.2.3
@@ -200,7 +204,7 @@ unicode-normalization-0.1.17
 unicode-segmentation-1.7.1
 unicode-width-0.1.8
 unicode-xid-0.2.1
-url-2.2.0
+url-2.2.1
 vcpkg-0.2.11
 vec_map-0.8.2
 version_check-0.9.2
@@ -234,7 +238,7 @@ SRCTAR="${PN}-release-${MY_PV}.tar.gz"
 
 DESCRIPTION="General purpose Docker image management tool"
 HOMEPAGE="https://github.com/Ultinous/docker-util"
-SRC_URI="${SRCTAR} $(cargo_crate_uris ${CRATES})"
+SRC_URI="http://can-i-haz-files/gentoo/${SRCTAR} $(cargo_crate_uris ${CRATES})"
 
 RESTRICT="mirror"
 
@@ -253,7 +257,7 @@ RDEPEND="${DEPEND}
 BDEPEND=">=virtual/rust-1.49.0"
 
 pkg_nofetch() {
-	elog "Please obtain ${SRCTAR} from Ultinous and place it in the distfiles directory"
+	einfo "Please download ${SRCTAR} from ${HOMEPAGE} and place them in your DISTDIR directory."
 }
 
 src_prepare() {
