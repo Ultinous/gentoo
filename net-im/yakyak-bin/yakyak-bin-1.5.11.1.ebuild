@@ -18,6 +18,11 @@ KEYWORDS="~amd64"
 
 RESTRICT="mirror strip"
 
+RDEPEND="
+media-video/ffmpeg
+x11-libs/gtk+
+"
+
 QA_PRESTRIPPED="
 	/opt/yakyak/libnode.so
 	/opt/yakyak/libffmpeg.so
@@ -26,15 +31,11 @@ QA_PRESTRIPPED="
 
 S="${WORKDIR}"
 
-DOCS="changelog"
-
 src_unpack() {
 	unpack_deb ${A}
 }
 
 src_prepare() {
-	mv usr/share/doc/${MY_PN}/changelog.gz .
-	gunzip changelog.gz
 	rm -rf usr/share/doc
 	default
 }
