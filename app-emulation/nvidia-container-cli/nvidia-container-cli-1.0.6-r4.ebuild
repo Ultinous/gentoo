@@ -23,7 +23,7 @@ KEYWORDS="-* amd64"
 IUSE="systemd"
 
 DEPEND="
-	x11-drivers/nvidia-drivers
+	<=x11-drivers/nvidia-drivers-470.57.02
 	net-libs/rpcsvc-proto
 	net-libs/libtirpc
 	systemd? ( sys-apps/systemd )
