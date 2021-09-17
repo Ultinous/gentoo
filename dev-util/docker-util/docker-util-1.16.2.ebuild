@@ -200,7 +200,7 @@ yaml-rust-0.4.5
 
 inherit cargo bash-completion-r1
 
-MY_PV="${PV/_/-}"
+MY_PV=$(ver_rs 3 - 4 .)
 
 COMPDIR="${WORKDIR}/completions"
 TMPBIN="${S}/target/release/${PN}"
