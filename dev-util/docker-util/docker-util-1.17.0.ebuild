@@ -19,7 +19,7 @@ bitflags-1.3.2
 block-buffer-0.7.3
 block-buffer-0.9.0
 block-padding-0.1.5
-bumpalo-3.7.0
+bumpalo-3.7.1
 byte-tools-0.3.1
 byteorder-1.4.3
 bytes-1.1.0
@@ -64,11 +64,11 @@ generic-array-0.14.4
 getrandom-0.2.3
 gimli-0.25.0
 git2-0.13.22
-h2-0.3.4
+h2-0.3.5
 hashbrown-0.11.2
 heck-0.3.3
 hermit-abi-0.1.19
-http-0.2.4
+http-0.2.5
 http-body-0.4.3
 httparse-1.5.1
 httpdate-1.0.1
@@ -81,7 +81,7 @@ itoa-0.4.8
 jobserver-0.1.24
 js-sys-0.3.55
 lazy_static-1.4.0
-libc-0.2.102
+libc-0.2.103
 libgit2-sys-0.12.23+1.2.0
 libz-sys-1.1.3
 linked-hash-map-0.5.4
@@ -102,7 +102,7 @@ opaque-debug-0.2.3
 opaque-debug-0.3.0
 openssl-0.10.36
 openssl-probe-0.1.4
-openssl-sys-0.9.66
+openssl-sys-0.9.67
 os_str_bytes-3.1.0
 percent-encoding-2.1.0
 pest-2.1.3
@@ -113,7 +113,7 @@ petgraph-0.5.1
 petgraph-0.6.0
 pin-project-lite-0.2.7
 pin-utils-0.1.0
-pkg-config-0.3.19
+pkg-config-0.3.20
 ppv-lite86-0.2.10
 proc-macro-error-1.0.4
 proc-macro-error-attr-1.0.4
@@ -152,7 +152,7 @@ socket2-0.4.2
 strsim-0.10.0
 strum-0.21.0
 strum_macros-0.21.1
-syn-1.0.76
+syn-1.0.77
 synstructure-0.12.5
 tempfile-3.2.0
 termcolor-1.1.2
@@ -160,13 +160,13 @@ terminal_size-0.1.17
 textwrap-0.14.2
 thiserror-1.0.29
 thiserror-impl-1.0.29
-tinyvec-1.4.0
+tinyvec-1.5.0
 tinyvec_macros-0.1.0
-tokio-1.11.0
+tokio-1.12.0
 tokio-native-tls-0.3.0
 tokio-util-0.6.8
 tower-service-0.3.1
-tracing-0.1.27
+tracing-0.1.28
 tracing-core-0.1.20
 try-lock-0.2.3
 typenum-1.14.0
@@ -215,7 +215,7 @@ RESTRICT="mirror"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~arm64 ~arm"
+KEYWORDS="amd64 arm64 ~x86 ~arm"
 IUSE="bash-completion zsh-completion fish-completion"
 
 DEPEND="
