@@ -28,7 +28,10 @@ DEPEND="
 	net-libs/libtirpc
 	systemd? ( sys-apps/systemd )
 "
-RDEPEND="${DEPEND}"
+RDEPEND="
+	${DEPEND}
+	!app-emulation/libnvidia-container
+"
 BDEPEND="
 	sys-devel/bmake
 	sys-apps/lsb-release
@@ -37,6 +40,7 @@ BDEPEND="
 PATCHES=(
  "${FILESDIR}"/fix_rpc_flags.patch
  "${FILESDIR}"/fix_git_rev.patch
+ "${FILESDIR}"/fix_added_bin_path.patch
 )
 
 src_unpack() {
