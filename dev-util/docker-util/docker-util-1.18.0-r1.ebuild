@@ -223,7 +223,7 @@ DEPEND="
 	dev-libs/libgit2:=
 "
 RDEPEND="${DEPEND}
-	>=app-emulation/docker-19
+	>=app-containers/docker-cli-19
 "
 BDEPEND=">=virtual/rust-1.54.0"
 

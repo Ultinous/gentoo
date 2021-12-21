@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="-* amd64"
 IUSE=""
 
-DEPEND="app-emulation/nvidia-container-cli"
+DEPEND="app-containers/nvidia-container-cli"
 RDEPEND="${DEPEND}"
 BDEPEND="dev-lang/go"
 

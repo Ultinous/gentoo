@@ -30,7 +30,7 @@ DEPEND="
 "
 RDEPEND="
 	${DEPEND}
-	!app-emulation/libnvidia-container
+	!app-containers/libnvidia-container
 "
 BDEPEND="
 	sys-devel/bmake

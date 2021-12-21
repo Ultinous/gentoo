@@ -12,7 +12,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 
 DEPEND="net-libs/libtirpc"
-RDEPEND="!app-emulation/nvidia-container-cli"
+RDEPEND="!app-containers/nvidia-container-cli"
 
 TARBALL_PV=${PV}
 NV_GITHUB_REPO="libnvidia-container"
