@@ -212,7 +212,7 @@ RESTRICT="mirror"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
-KEYWORDS="amd64 arm64 ~x86 ~arm"
+KEYWORDS="~amd64 ~arm64 ~x86 ~arm"
 IUSE="bash-completion zsh-completion fish-completion"
 
 DEPEND="
