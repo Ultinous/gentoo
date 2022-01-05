@@ -26,10 +26,9 @@ bytes-1.1.0
 cast-0.3.0
 cc-1.0.72
 cfg-if-1.0.0
-clap-3.0.1
-clap_complete-3.0.1
-clap_derive-3.0.1
-clap_generate-3.0.0
+clap-3.0.4
+clap_complete-3.0.2
+clap_derive-3.0.2
 core-foundation-0.9.2
 core-foundation-sys-0.8.3
 cpufeatures-0.2.1
@@ -60,7 +59,7 @@ futures-sink-0.3.19
 futures-task-0.3.19
 futures-util-0.3.19
 generic-array-0.12.4
-generic-array-0.14.4
+generic-array-0.14.5
 getrandom-0.2.3
 gimli-0.26.1
 git2-0.13.25
@@ -212,7 +211,7 @@ RESTRICT="mirror"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86 ~arm"
+KEYWORDS="amd64 arm64 ~x86 ~arm"
 IUSE="bash-completion zsh-completion fish-completion"
 
 DEPEND="
