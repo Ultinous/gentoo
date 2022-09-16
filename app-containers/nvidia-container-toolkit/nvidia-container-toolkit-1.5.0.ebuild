@@ -5,7 +5,7 @@ EAPI=7
 inherit go-module
 
 DESCRIPTION="nvidia-container-toolkit OCI hook invoked by runc"
-HOMEPAGE="https://github.com/NVIDIA"
+HOMEPAGE="https://github.com/NVIDIA/nvidia-container-toolkit"
 KEYWORDS="*"
 
 LICENSE="Apache-2.0"

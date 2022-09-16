@@ -5,7 +5,7 @@ EAPI=7
 inherit go-module
 
 DESCRIPTION="nvidia-container-runtime wrapper around runc"
-HOMEPAGE="https://github.com/NVIDIA"
+HOMEPAGE="https://github.com/NVIDIA/nvidia-container-runtime"
 KEYWORDS="*"
 
 LICENSE="Apache-2.0"
